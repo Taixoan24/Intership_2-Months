@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="text.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="singup-text">
+            <div class="singup-text--title">Learn to code by watching others </div>
+            <div class="singup-text--subtitle">See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great, but understanding how developers think is invaluable.</div>
+        </div>
+        <div class="form">
+            <div class="form-title">
+                <div class="form-title--days">
+                    Try it free 7 days
+                </div>
+                <div class="form-title--dolar">
+                    then $20/mo.thereafter
+                </div>
+            </div><br>
+            <form name="form" onsubmit="return validateform()">
+                <div class="signup-error">
+                    <input class="signup-error--input" type="text" name="Firstname" id="firstname" placeholder="First Name">
+                    <img id="error-icon-fname" src="icon-error.svg" alt="">
+                    <div id="firstname-error"></div>
+                </div>
+                <div class="signup-error">
+                    <input class="signup-error--input" type="text" name="Lastname" id="lastname" placeholder="Last Name">
+                    <img id="error-icon-lname" src="icon-error.svg" alt="">
+                    <div id="lastname-error"></div>
+                </div>
+                <div class="signup-error">
+                    <input class="signup-error--input" type="text" name="Email" id="email" placeholder="Email Address">
+                    <img id="error-icon-mail" src="icon-error.svg" alt="">
+                    <div id="email-error"></div>
+                </div>
+                <div class="signup-error">
+                    <input class="signup-error--input" type="text" name="Password" id="pw" placeholder="Password">
+                    <img id="error-icon-pw" src="icon-error.svg" alt="">
+                    <div id="password-error"></div>
+                </div>
+                <div class="btn-submit">
+                    <button type="submit" class="btn-submit-claim" value="submit">
+                        CLAIM YOUR FREE TRIAL</button>
+                </div>
+                <div class="form-text">
+                    <div class="form-text-btn">By clicking the button, you are agreeing to our </div>
+                    <div class="form-text-services">Terms and Services</div>
+                </div>
+            </form>
+            <script src="javascript.js"></script>
+        </div>
+    </div>
+</body>
+</html>

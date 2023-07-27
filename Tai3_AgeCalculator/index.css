@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    width: auto;
+    display: flex;
+    height: 100vh;
+    background: #F0F0F0;
+    align-items: center;
+}
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    background: #FFF;
+    border-radius: 24px 24px 176px 24px;
+    padding: 56px 56px 70px;
+}
+input {
+
+    width: 115px;
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    color: #716F6F;
+}
+.form_container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+.block .text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: 'Poppins';
+    color: #716F6F;
+}
+.submit_block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 33px;
+}
+.submit_block .submit_btn {
+    border-radius: 50%;
+    padding: 26px 25px;
+    background-color: #854DFF;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+hr {
+    color: #DBDBDB;
+    width: 632px;
+    margin: 0;
+}
+#day,
+#month,
+#year {
+    width: 147px;
+    padding: 17px 6px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background: #FFF;
+    outline: none;
+    margin-top: 10px;
+}
+.block {
+    position: relative;
+}
+#day-error,
+#month-error,
+#year {
+    position: absolute;
+}
+.submit_btn:hover {
+    background-color: #000;
+}
+.output {
+    font-family: 'Poppins';
+}
+/* Edit show result */
+.output {
+    display: flex;
+    gap: 19px;
+}
+.output-result-number #years-result,
+#months-result,
+#days-result {
+    font-size: 96px;
+    color: #854DFF;
+    line-height: 105.6px;
+    font-weight: 700;
+}
+.year-result,
+.month-result,
+.day-result {
+    line-height: 105.6px;
+    font-size: 96px;
+    font-weight: 700;
+}
+#day-error,
+#month-error,
+#year-error {
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        display: block;
+        height: auto;
+    }
+    .container {
+        margin: 164px 16px 163px;
+        border-radius: 24px 24px 88px 24px;
+        padding: 52px 24px 51px;
+        max-width: 368px;
+    }
+    .form_container {
+        margin-bottom: 48px;
+        display: flex;
+        gap: 16px;
+    }
+    .submit_block .submit_btn {
+        padding: 15px 15px;
+    }
+    .submit_block {
+        position: relative;
+    }
+    input {
+        width: 6px;
+        display: flex;
+        font-size: 23px;
+        font-weight: 700;
+        color: #716F6F;
+    }
+    .year-result.result, .month-result.result, .day-result.result{
+        font-size: 52px;
+    }
+    hr {
+        width: 256px;
+    }
+    #day, #month, #year{
+        width: 82px;
+    }
+    .output-result-number #years-result, #months-result, #days-result {
+        font-size: 52px;
+        color: #854DFF;
+        line-height: 105.6px;
+        font-weight: 700;
+    }
+}
+
